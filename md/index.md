@@ -1,8 +1,9 @@
 <div style="text-align: center"> 
 
-<h1>Combining audio control and style transfer using latent diffusion </h1>
-Supporting webpage for ISMIR 2024.
-Code is available <a href="https://github.com/NilsDem/control-transfer-diffusion/">here</a>
+# Editing Music with Melody and Text: Using ControlNet for Diffusion Transformer
+Siyuan Hou, Shansong Liu, Ruibin Yuan, Wei Xue, Ying Shan, Mangsuo Zhao, Chao Zhang
+Supporting webpage for ICASSP 2025.
+<!-- Code is available <a href="https://github.com/NilsDem/control-transfer-diffusion/">here</a> -->
 </div>
 
 
@@ -10,12 +11,13 @@ Code is available <a href="https://github.com/NilsDem/control-transfer-diffusion
 
 <h3>Abstract</h3>
 
-Deep generative models are now able to synthesize high-quality audio signals, shifting the critical aspect in their development from audio quality to control capabilities. Although text-to-music generation is getting largely adopted by the general public, explicit control and example-based style transfer are more adequate modalities to capture the intents of artists and musicians. 
-In this paper, we aim to unify explicit control and style transfer within a single model by separating local and global information to capture musical structure and timbre respectively. To do so, we leverage the capabilities of diffusion autoencoders to extract semantic features, in order to build two representation spaces. We enforce disentanglement between those spaces using an adversarial criterion and a two-stage training strategy. Our resulting model can generate audio matching a timbre target, while specifying structure either with explicit controls or through another audio example. We evaluate our model on one-shot timbre transfer and MIDI-to-audio tasks on instrumental recordings and show that we outperform existing baselines in terms of audio quality and target fidelity. Furthermore, we show that our method can generate cover versions of complete musical pieces by transferring rhythmic and melodic content to the style of a target audio in a different genre. 
+Despite the significant progress in controllable music generation and editing, challenges remain in the quality and length of generated music due to the use of Mel-spectrogram representations and UNet-based model structures. To address these limitations, we propose a novel approach using a Diffusion Transformer (DiT) augmented with an additional control branch using ControlNet. This allows for long-form and variable-length music generation and editing controlled by text and melody prompts.
+For more precise and fine-grained melody control, we introduce a novel top-$k$ constant-Q Transform representation as the melody prompt, reducing ambiguity compared to previous representations (e.g., chroma), particularly for music with multiple tracks or a wide range of pitch values. To effectively balance the control signals from text and melody prompts, we adopt a curriculum learning strategy that progressively masks the melody prompt, resulting in a more stable training process.
+Experiments have been performed on text-to-music generation and music-style transfer tasks using open-source instrumental recording data. The results demonstrate that by extending StableAudio, a pre-trained text-controlled DiT model, our approach enables superior melody-controlled editing while retaining good text-to-music generation performance. These results outperform a strong MusicGen baseline in terms of both text-based generation and melody preservation for editing.
 
 </div>
 <p align="center">
-<img src="images/method.png">
+<img src="method.png">
 </p>
 
 
