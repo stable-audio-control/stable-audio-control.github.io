@@ -1,7 +1,7 @@
 <div style="text-align: center"> 
 
-<h1> Editing Music with Melody and Text: \\ Using ControlNet for Diffusion Transformer </h1>
-Siyuan Hou, Shansong Liu, Ruibin Yuan, Wei Xue, Ying Shan, Mangsuo Zhao, Chao Zhang \\
+<h1> Editing Music with Melody and Text: <br> Using ControlNet for Diffusion Transformer </h1>
+Siyuan Hou, Shansong Liu, Ruibin Yuan, Wei Xue, Ying Shan, Mangsuo Zhao, Chao Zhang  <br> 
 Supporting webpage for ICASSP 2025.
 <!-- Code is available <a href="https://github.com/NilsDem/control-transfer-diffusion/">here</a> -->
 </div>
@@ -12,7 +12,7 @@ Supporting webpage for ICASSP 2025.
 <h3>Abstract</h3>
 
 Despite the significant progress in controllable music generation and editing, challenges remain in the quality and length of generated music due to the use of Mel-spectrogram representations and UNet-based model structures. To address these limitations, we propose a novel approach using a Diffusion Transformer (DiT) augmented with an additional control branch using ControlNet. This allows for long-form and variable-length music generation and editing controlled by text and melody prompts.
-For more precise and fine-grained melody control, we introduce a novel top-$k$ constant-Q Transform representation as the melody prompt, reducing ambiguity compared to previous representations (e.g., chroma), particularly for music with multiple tracks or a wide range of pitch values. To effectively balance the control signals from text and melody prompts, we adopt a curriculum learning strategy that progressively masks the melody prompt, resulting in a more stable training process.
+For more precise and fine-grained melody control, we introduce a novel top-k constant-Q Transform representation as the melody prompt, reducing ambiguity compared to previous representations (e.g., chroma), particularly for music with multiple tracks or a wide range of pitch values. To effectively balance the control signals from text and melody prompts, we adopt a curriculum learning strategy that progressively masks the melody prompt, resulting in a more stable training process.
 Experiments have been performed on text-to-music generation and music-style transfer tasks using open-source instrumental recording data. The results demonstrate that by extending StableAudio, a pre-trained text-controlled DiT model, our approach enables superior melody-controlled editing while retaining good text-to-music generation performance. These results outperform a strong MusicGen baseline in terms of both text-based generation and melody preservation for editing.
 
 </div>
