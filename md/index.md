@@ -1,7 +1,7 @@
 <div style="text-align: center"> 
 
-<h1> Editing Music with Melody and Text: Using ControlNet for Diffusion Transformer </h1>
-Siyuan Hou, Shansong Liu, Ruibin Yuan, Wei Xue, Ying Shan, Mangsuo Zhao, Chao Zhang
+<h1> Editing Music with Melody and Text: \\ Using ControlNet for Diffusion Transformer </h1>
+Siyuan Hou, Shansong Liu, Ruibin Yuan, Wei Xue, Ying Shan, Mangsuo Zhao, Chao Zhang \\
 Supporting webpage for ICASSP 2025.
 <!-- Code is available <a href="https://github.com/NilsDem/control-transfer-diffusion/">here</a> -->
 </div>
