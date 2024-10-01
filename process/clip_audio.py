@@ -1,20 +1,19 @@
 import os
-import librosa
 import soundfile as sf
 
-# 音频处理函数：截取前 47 秒并保存
+# 音频处理函数：截取前 47 秒并保存（保留原始通道数，如立体声）
 def process_wav_file(input_path, output_path, duration=47):
-    # 加载音频文件
-    y, sr = librosa.load(input_path, sr=None)
+    # 使用 soundfile 读取音频文件，保留通道信息
+    data, sr = sf.read(input_path)
     
     # 计算对应的采样点
     max_samples = int(sr * duration)
     
     # 截取音频
-    y_trimmed = y[:max_samples]
+    data_trimmed = data[:max_samples]
     
-    # 保存截取后的音频
-    sf.write(output_path, y_trimmed, sr)
+    # 保存截取后的音频，保持原始的音频格式
+    sf.write(output_path, data_trimmed, sr)
 
 # 遍历目录下所有的 wav 文件并处理
 def process_audio_directory(input_dir, output_dir, duration=47):
