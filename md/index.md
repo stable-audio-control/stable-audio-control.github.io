@@ -34,7 +34,8 @@ Scroll to see all the results if necessary.
       <col style="width: 600px;">
       <col style="width: 200px;">
       <col style="width: 200px;">
-    </colgroup>
+      <col style="width: 200px;">
+  </colgroup>
   <thead>
     <tr>
       <th style="text-align:center;"><span style="display: inline-block; width:300px">text prompt</th>
