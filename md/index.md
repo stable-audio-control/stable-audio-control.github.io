@@ -21,7 +21,7 @@ Experiments have been performed on text-to-music generation and music-style tran
 </p>
 
 
-# Text To Music
+# Music Editing
 
 Examples in text-to-music generation on the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset). 
 For our model, we use a text prompt from dataset and a music prompt extracted from the target audio as conditions to complete the text-to-music task.  For the baseline [MusicGEN](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md), the same text prompt and its melody condition in the form of chroma are used.
@@ -30,7 +30,7 @@ Scroll to see all the results if necessary.
 
 <table class="table table-sm text-center" style="vertical-align: middle;">
   <colgroup>
-      <col style="width: 200px;">
+      <col style="width: 300px;">
       <col style="width: 600px;">
       <col style="width: 200px;">
       <col style="width: 200px;">
@@ -39,6 +39,7 @@ Scroll to see all the results if necessary.
   <thead>
     <tr>
       <th style="text-align:center;"><span style="display: inline-block; width:300px">text prompt</span></th>
+      <th style="text-align:center;">music prompt</th>
       <th style="text-align:center;">Target</th>
       <th style="text-align:center;">MusicGen-melody</th>
       <th style="text-align:center;">MusicGen-melody-large</th>
@@ -48,6 +49,7 @@ Scroll to see all the results if necessary.
   <tbody>
     <tr>
       <td>A twisty nice melody song by a slide electric guitar on top of acoustic chords later accompanied with a ukelele.</td>
+      <td><img src="../audios/transfer/source/95.png" controls style="width: 600px"></img></td>
       <td><audio src="../audios/transfer/target/95.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody/95.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody-large/95.wav" controls style="width: 200px"></audio></td>
@@ -55,6 +57,7 @@ Scroll to see all the results if necessary.
     </tr>
     <tr>
       <td>8-bit melody brings one back to the arcade saloons while keeping the desire to dance.</td>
+      <td><img src="../audios/transfer/source/99.png" controls style="width: 600px"></img></td>
       <td><audio src="../audios/transfer/target/99.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody/99.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody-large/99.wav" controls style="width: 200px"></audio></td>
@@ -62,6 +65,7 @@ Scroll to see all the results if necessary.
     </tr>
     <tr>
       <td>Instrumental piano piece with a slightly classical touch and a nostalgic, bittersweet or blue mood.</td>
+      <td><img src="../audios/transfer/source/327.png" controls style="width: 600px"></img></td>
       <td><audio src="../audios/transfer/target/327.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody/327.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody-large/327.wav" controls style="width: 200px"></audio></td>
@@ -69,6 +73,7 @@ Scroll to see all the results if necessary.
     </tr>
     <tr>
       <td>Positive instrumental pop song with a strong rhythm and brass section.</td>
+      <td><img src="../audios/transfer/source/343.png" controls style="width: 600px"></img></td>
       <td><audio src="../audios/transfer/target/343.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody/343.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody-large/343.wav" controls style="width: 200px"></audio></td>
@@ -76,6 +81,7 @@ Scroll to see all the results if necessary.
     </tr>
     <tr>
       <td>A blues piano track that would be very well suited in a 90s sitcom. The piano occupies the whole track that has a prominent bass line as well, with a general jolly and happy feeling throughout the song.</td>
+      <td><img src="../audios/transfer/source/567.png" controls style="width: 600px"></img></td>
       <td><audio src="../audios/transfer/target/567.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody/567.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody-large/567.wav" controls style="width: 200px"></audio></td>
@@ -83,6 +89,7 @@ Scroll to see all the results if necessary.
     </tr>
     <tr>
       <td>An upbeat pop instrumental track starting with synthesized piano sound, later with guitar added in, and then a saxophone-like melody line.</td>
+      <td><img src="../audios/transfer/source/835.png" controls style="width: 600px"></img></td>
       <td><audio src="../audios/transfer/target/835.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody/835.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody-large/835.wav" controls style="width: 200px"></audio></td>
@@ -90,6 +97,7 @@ Scroll to see all the results if necessary.
     </tr>
     <tr>
       <td>Pop song with a classical chord progression in which all instruments join progressively, building up a richer and richer music.</td>
+      <td><img src="../audios/transfer/source/903.png" controls style="width: 400px"></img></td>
       <td><audio src="../audios/transfer/target/903.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody/903.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody-large/903.wav" controls style="width: 200px"></audio></td>
@@ -97,6 +105,7 @@ Scroll to see all the results if necessary.
     </tr>
     <tr>
       <td>An instrumental world fusion track with prominent reggae elements.</td>
+      <td><img src="../audios/transfer/source/959.png" controls style="width: 400px"></img></td>
       <td><audio src="../audios/transfer/target/959.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody/959.wav" controls style="width: 200px"></audio></td>
       <td><audio src="../audios/transfer/melody-large/959.wav" controls style="width: 200px"></audio></td>
