@@ -39,7 +39,7 @@ Scroll to see all the results if necessary.
   <thead>
     <tr>
       <th style="text-align:center;"><span style="display: inline-block; width:300px">text prompt</span></th>
-      <th style="text-align:center;"><span style="display: inline-block; width:400px">music prompt</th>
+      <th style="text-align:center;"><span style="display: inline-block; width:400px">music prompt</span></th>
       <th style="text-align:center;">Target</th>
       <th style="text-align:center;">MusicGen-melody</th>
       <th style="text-align:center;">MusicGen-melody-large</th>
