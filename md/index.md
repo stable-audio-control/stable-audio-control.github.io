@@ -21,10 +21,10 @@ Experiments have been performed on text-to-music generation and music-style tran
 </p>
 
 
-# MIDI-to-audio
+# Text To Music
 
-Examples in MIDI-to-audio generation on the [Slakh dataset](http://www.slakh.com/) . For each midi file, we present results in reconstruction (using the original audio associated with the midi file) and transfer to a different recording timbre. For the baseline SpecDiff (Multi-instrument music synthesis with spectrogram diffusion <a href="#note1" id="note1ref">
-[1]</a>), we swap the MIDI instrument program to the one of the target timbre sample. 
+Examples in text-to-music generation on the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset). 
+For our model, we use a text prompt from dataset and a music prompt extracted from the target audio as conditions to complete the text-to-music task.  For the baseline [MusicGEN](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md), the same text prompt and its melody condition in the form of chroma are used.
 
 Scroll to see all the results if necessary.
 
@@ -34,139 +34,72 @@ Scroll to see all the results if necessary.
       <col style="width: 600px;">
       <col style="width: 200px;">
       <col style="width: 200px;">
-      <col style="width: 200px;">
-      <col style="width: 200px;">
-      <col style="width: 200px;">
     </colgroup>
   <thead>
     <tr>
-      <th style="text-align:center;"></th>
-      <th style="text-align:center"><span style="display: inline-block; width:300px">MIDI</span> </th>
-      <th style="text-align:center;"></th>
+      <th style="text-align:center;"><span style="display: inline-block; width:300px">text prompt</th>
       <th style="text-align:center;">Target</th>
-      <th style="text-align:center;">SpecDiff</th>
-      <th style="text-align:center;">Ours with encoder</th>
+      <th style="text-align:center;">MusicGen-melody</th>
+      <th style="text-align:center;">MusicGen-melody-large</th>
       <th style="text-align:center;">Ours</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">Piano</td>
-      <td rowspan="2"><img src="audios/midi/midi/piano.png" controls style="width: 300px; height: 100px"></td>
-      <td>reconstruction</td>
-      <td><audio src="audios/midi/true/piano.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/piano.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/piano.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/piano.wav" controls style="width: 200px"></audio></td>
+      <td>A twisty nice melody song by a slide electric guitar on top of acoustic chords later accompanied with a ukelele.</td>
+      <td><audio src="../audios/transfer/target/95.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody/95.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody-large/95.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/ours/95.wav" controls style="width: 200px"></audio></td>
     </tr>
-      <tr>
-      <td>transfer</td>
-      <td><audio src="audios/midi/target/piano.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/piano_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/piano_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/piano_transfer.wav" controls style="width: 200px"></audio></td>
-    </tr>
-    <!-- Add more rows as needed -->
     <tr>
-      <td rowspan="2">Guitar</td>
-      <td rowspan="2"><img src="audios/midi/midi/guitar.png" height="120" width ="300" ></td>
-      <td>reconstruction</td>
-      <td><audio src="audios/midi/true/guitar.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/guitar.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/guitar.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/guitar.wav" controls style="width: 200px"></audio></td>
+      <td>8-bit melody brings one back to the arcade saloons while keeping the desire to dance.</td>
+      <td><audio src="../audios/transfer/target/99.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody/99.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody-large/99.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/ours/99.wav" controls style="width: 200px"></audio></td>
     </tr>
-      <tr>
-      <td>transfer</td>
-      <td><audio src="audios/midi/target/guitar.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/guitar_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/guitar_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/guitar_transfer.wav" controls style="width: 200px"></audio></td>
-    </tr>
-        <!-- Add more rows as needed -->
     <tr>
-      <td rowspan="2">Strings</td>
-      <td rowspan="2"><img src="audios/midi/midi/strings.png" height="120" width ="300" ></td>
-      <td>reconstruction</td>
-      <td><audio src="audios/midi/true/strings.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/strings.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/strings.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/strings.wav" controls style="width: 200px"></audio></td>
+      <td>Instrumental piano piece with a slightly classical touch and a nostalgic, bittersweet or blue mood.</td>
+      <td><audio src="../audios/transfer/target/327.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody/327.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody-large/327.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/ours/327.wav" controls style="width: 200px"></audio></td>
     </tr>
-      <tr>
-      <td>transfer</td>
-      <td><audio src="audios/midi/target/strings.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/strings_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/strings_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/strings_transfer.wav" controls style="width: 200px"></audio></td>
-    </tr>
-        <!-- Add more rows as needed -->
     <tr>
-      <td rowspan="2">Voice</td>
-      <td rowspan="2"><img src="audios/midi/midi/voice.png" height="120" width ="300" ></td>
-      <td>reconstruction</td>
-      <td><audio src="audios/midi/true/voice.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/voice.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/voice.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/voice.wav" controls style="width: 200px"></audio></td>
+      <td>Positive instrumental pop song with a strong rhythm and brass section.</td>
+      <td><audio src="../audios/transfer/target/343.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody/343.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody-large/343.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/ours/343.wav" controls style="width: 200px"></audio></td>
     </tr>
-      <tr>
-      <td>transfer</td>
-      <td><audio src="audios/midi/target/voice.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/voice_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/voice_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/voice_transfer.wav" controls style="width: 200px"></audio></td>
-    </tr>
-            <!-- Add more rows as needed -->
     <tr>
-      <td rowspan="2">Synth</td>
-      <td rowspan="2"><img src="audios/midi/midi/synth.png" height="120" width ="300" ></td>
-      <td>reconstruction</td>
-      <td><audio src="audios/midi/true/chelou.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/chelou.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/chelou.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/chelou.wav" controls style="width: 200px"></audio></td>
+      <td>A blues piano track that would be very well suited in a 90s sitcom. The piano occupies the whole track that has a prominent bass line as well, with a general jolly and happy feeling throughout the song.</td>
+      <td><audio src="../audios/transfer/target/567.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody/567.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody-large/567.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/ours/567.wav" controls style="width: 200px"></audio></td>
     </tr>
-      <tr>
-      <td>transfer</td>
-      <td><audio src="audios/midi/target/chelou.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/chelou_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/chelou_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/chelou_transfer.wav" controls style="width: 200px"></audio></td>
-    </tr>
-              <!-- Add more rows as needed -->
     <tr>
-      <td rowspan="2">Bass</td>
-      <td rowspan="2"><img src="audios/midi/midi/bass.png" height="120" width ="300" ></td>
-      <td>reconstruction</td>
-      <td><audio src="audios/midi/true/bass.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/bass.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/bass.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/bass.wav" controls style="width: 200px"></audio></td>
+      <td>An upbeat pop instrumental track starting with synthesized piano sound, later with guitar added in, and then a saxophone-like melody line.</td>
+      <td><audio src="../audios/transfer/target/835.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody/835.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody-large/835.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/ours/835.wav" controls style="width: 200px"></audio></td>
     </tr>
-      <tr>
-      <td>transfer</td>
-      <td><audio src="audios/midi/target/bass.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/bass_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/bass_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/bass_transfer.wav" controls style="width: 200px"></audio></td>
-    </tr>
-                <!-- Add more rows as needed -->
     <tr>
-      <td rowspan="2">Flute</td>
-      <td rowspan="2"><img src="audios/midi/midi/flute.png" height="120" width ="300" ></td>
-      <td>reconstruction</td>
-      <td><audio src="audios/midi/true/flute.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/flute.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/flute.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/flute.wav" controls style="width: 200px"></audio></td>
+      <td>Pop song with a classical chord progression in which all instruments join progressively, building up a richer and richer music.</td>
+      <td><audio src="../audios/transfer/target/903.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody/903.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody-large/903.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/ours/903.wav" controls style="width: 200px"></audio></td>
     </tr>
-      <tr>
-      <td>transfer</td>
-      <td><audio src="audios/midi/target/flute.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/specdiff/flute_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours/flute_transfer.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="audios/midi/ours_enc/flute_transfer.wav" controls style="width: 200px"></audio></td>
+    <tr>
+      <td>An instrumental world fusion track with prominent reggae elements.</td>
+      <td><audio src="../audios/transfer/target/959.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody/959.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/MusicGen-melody-large/959.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/ours/959.wav" controls style="width: 200px"></audio></td>
     </tr>
   </tbody>
 </table> 
