@@ -49,58 +49,58 @@ Scroll to see all the results if necessary.
     <tr>
       <td>A twisty nice melody song by a slide electric guitar on top of acoustic chords later accompanied with a ukelele.</td>
       <td><audio src="../audios/transfer/target/95.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody/95.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody-large/95.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/ours/95.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody/95.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody-large/95.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/our/95.wav" controls style="width: 200px"></audio></td>
     </tr>
     <tr>
       <td>8-bit melody brings one back to the arcade saloons while keeping the desire to dance.</td>
       <td><audio src="../audios/transfer/target/99.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody/99.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody-large/99.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/ours/99.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody/99.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody-large/99.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/our/99.wav" controls style="width: 200px"></audio></td>
     </tr>
     <tr>
       <td>Instrumental piano piece with a slightly classical touch and a nostalgic, bittersweet or blue mood.</td>
       <td><audio src="../audios/transfer/target/327.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody/327.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody-large/327.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/ours/327.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody/327.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody-large/327.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/our/327.wav" controls style="width: 200px"></audio></td>
     </tr>
     <tr>
       <td>Positive instrumental pop song with a strong rhythm and brass section.</td>
       <td><audio src="../audios/transfer/target/343.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody/343.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody-large/343.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/ours/343.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody/343.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody-large/343.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/our/343.wav" controls style="width: 200px"></audio></td>
     </tr>
     <tr>
       <td>A blues piano track that would be very well suited in a 90s sitcom. The piano occupies the whole track that has a prominent bass line as well, with a general jolly and happy feeling throughout the song.</td>
       <td><audio src="../audios/transfer/target/567.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody/567.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody-large/567.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/ours/567.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody/567.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody-large/567.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/our/567.wav" controls style="width: 200px"></audio></td>
     </tr>
     <tr>
       <td>An upbeat pop instrumental track starting with synthesized piano sound, later with guitar added in, and then a saxophone-like melody line.</td>
       <td><audio src="../audios/transfer/target/835.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody/835.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody-large/835.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/ours/835.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody/835.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody-large/835.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/our/835.wav" controls style="width: 200px"></audio></td>
     </tr>
     <tr>
       <td>Pop song with a classical chord progression in which all instruments join progressively, building up a richer and richer music.</td>
       <td><audio src="../audios/transfer/target/903.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody/903.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody-large/903.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/ours/903.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody/903.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody-large/903.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/our/903.wav" controls style="width: 200px"></audio></td>
     </tr>
     <tr>
       <td>An instrumental world fusion track with prominent reggae elements.</td>
       <td><audio src="../audios/transfer/target/959.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody/959.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/MusicGen-melody-large/959.wav" controls style="width: 200px"></audio></td>
-      <td><audio src="../audios/transfer/ours/959.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody/959.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/melody-large/959.wav" controls style="width: 200px"></audio></td>
+      <td><audio src="../audios/transfer/our/959.wav" controls style="width: 200px"></audio></td>
     </tr>
   </tbody>
 </table> 
