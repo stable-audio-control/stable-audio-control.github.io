@@ -23,8 +23,7 @@ Experiments have been performed on text-to-music generation and music-style tran
 
 # Music Editing
 
-Examples in text-to-music generation on the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset). 
-For our model, we use a text prompt from dataset and a music prompt extracted from the target audio as conditions to complete the text-to-music task.  For the baseline [MusicGEN](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md), the same text prompt and its melody condition in the form of chroma are used.
+The examples of music editing task are all from the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset)<a href="#note1" id="note1ref">[1]</a>. For our model, we use a text prompt and a music prompt as the conditions for music editing. The text prompt comes from the dataset, while the music prompt is the top-4 constant-Q transform (CQT) representation extracted from the target audio. The table below shows the music prompt, displaying the top-4 CQT representation of the left channel from 0 to 6 seconds. For the baseline model [MusicGEN](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md)<a href="#note2" id="note2ref">[2]</a>, the same text prompt and Chroma-based melody representation are used as conditional inputs.
 
 Scroll to see all the results if necessary.
 
@@ -117,7 +116,10 @@ Scroll to see all the results if necessary.
 
 # Text To Music
 
+Examples in text-to-music generation on the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset).
 Examples in timbre transfer on the [Slakh dataset](http://www.slakh.com/). We compare our method with two baselines, Music Style Transfer <a href="#note2" id="note1ref">[2]</a> and SS-VAE <a href="#note1" id="note3ref">[3]</a>.
+
+The examples for the text-to-music task also come from the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset)<a href="#note1" id="note1ref">[1]</a>. For both our model and the baseline model [MusicGEN](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md)<a href="#note2" id="note2ref">[2]</a>, only the text prompt from the dataset is used as the control condition for music generation. In this case, the music prompt for our model is left empty.
 
 
 | <span style="display: inline-block; width:120px"> </span>  | Source | Target | SS-VAE | Music Style Transfer | Ours no adv. | Ours |
@@ -135,5 +137,3 @@ Examples in timbre transfer on the [Slakh dataset](http://www.slakh.com/). We co
 <a id="note1" href="#note1ref">[1]</a> J. Copet, F. Kreuk, I. Gat, T. Remez, D. Kant, G. Synnaeve, Y. Adi, and A. Defossez, “Simple and controllable music generation,” in Proc. NeurIPS, New Orleans, 2023.
 
 <a id="note2" href="#note2ref">[2]</a> I. Manco, B. Weck, S. Doh, M. Won, Y. Zhang, D. Bogdanov, Y. Wu, K. Chen, P. Tovstogan, E. Benetos, E. Quinton, G. Fazekas, and J. Nam, “The Song Describer dataset: A corpus of audio captions for music-and-language evaluation,” in Proc. NeurIPS, New Orleans, 2023.
-
-<a id="note3" href="#note3ref">[3]</a>  Li, Y. Zhang, F. Tang, C. Ma, W. Dong, and C. Xu, “Music style transfer with time-varying inversion of diffusion models,” in Proceedings of the AAAI Conference on Artificial Intelligence, vol. 38, no. 1, 2024, pp.547–555
