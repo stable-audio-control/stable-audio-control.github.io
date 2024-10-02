@@ -5,8 +5,13 @@ Siyuan Hou<sup>1,2</sup>, Shansong Liu<sup>2</sup>, Ruibin Yuan<sup>3</sup>, Wei
 <sup>1</sup>Tsinghua University <br>
 <sup>2</sup>ARC Lab, Tencent PCG <br>
 <sup>3</sup>Hong Kong University of Science and Technology<br>
-Supporting webpage for ICASSP 2025.
+
+<p>
+Supporting webpage for ICASSP 2025.<br>
+<!-- <a href="https://arxiv.org/abs/2301.12503">[Paper on ArXiv]</a> -->
 <!-- Code is available <a href="https://github.com/NilsDem/control-transfer-diffusion/">here</a> -->
+</p>
+
 </div>
 
 
