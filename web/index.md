@@ -1,7 +1,10 @@
 <div style="text-align: center"> 
 
 <h1> Editing Music with Melody and Text: <br> Using ControlNet for Diffusion Transformer </h1>
-Siyuan Hou, Shansong Liu, Ruibin Yuan, Wei Xue, Ying Shan, Mangsuo Zhao, Chao Zhang  <br> 
+Siyuan Hou<sup>1,2</sup>, Shansong Liu<sup>2</sup>, Ruibin Yuan<sup>3</sup>, Wei Xue<sup>3</sup>, Ying Shan<sup>2</sup>, Mangsuo Zhao<sup>1</sup>, Chao Zhang<sup>1</sup>  <br>
+<sup>1</sup>Tsinghua University <br>
+<sup>2</sup>ARC Lab, Tencent PCG <br>
+<sup>3</sup>Hong Kong University of Science and Technology<br>
 Supporting webpage for ICASSP 2025.
 <!-- Code is available <a href="https://github.com/NilsDem/control-transfer-diffusion/">here</a> -->
 </div>
@@ -124,7 +127,6 @@ Scroll to see all the results if necessary.
 | <span style="display: inline-block; width:120px">text prompt</span> | MusicGen-melody | MusicGen-melody-large | Ours |
 | :-: | :-: | :-: | :-: |
 | An energetic rock and roll song, accompanied by a nervous electric guitar. |<audio src="../audios/text-to-music/melody/659.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/melody-large/659.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/ours/659.wav" controls style="width: 200px"></audio> |
-| A twisty nice melody song by a slide electric guitar on top of acoustic chords later accompanied with a ukelele. |<audio src="../audios/text-to-music/melody/95.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/melody-large/95.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/ours/95.wav" controls style="width: 200px"></audio> |
 | A deep house track with a very clear build up, very well balanced and smooth kick-snare timbre. The glockenspiel samples seem to be the best option to aid for the smoothness of such a track, which helps 2 minutes to pass like it was nothing.  A very clear and effective contrastive counterpoint structure between the bass and treble registers of keyboards and then the bass drum/snare structure is what makes this song a very good representative of house music. |<audio src="../audios/text-to-music/melody/867.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/melody-large/867.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/ours/867.wav" controls style="width: 200px"></audio> |
 | A string ensemble starts of the track with legato melancholic playing. After two bars, a more instruments from the ensemble come in. Alti and violins seem to be playing melody while celli, alti and basses underpin the moving melody lines with harmonies and chords. The track feels ominous and melanchonic. Halfway through, alti switch to pizzicato, and then fade out to let the celli and basses come through with somber melodies, leaving the chords to the violins. |<audio src="../audios/text-to-music/melody/58.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/melody-large/58.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/ours/58.wav" controls style="width: 200px"></audio> |
 | medium tempo ambient sounds to begin with and slow guitar plucking layering followed by an ambient rhythmic beat and then remove the layering in the opposite direction. |<audio src="../audios/text-to-music/melody/452.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/melody-large/452.wav" controls style="width: 200px"></audio> | <audio src="../audios/text-to-music/ours/452.wav" controls style="width: 200px"></audio> |
@@ -133,6 +135,6 @@ Scroll to see all the results if necessary.
 
 ## References 
 
-<a id="note1" href="#note1ref">[1]</a> J. Copet, F. Kreuk, I. Gat, T. Remez, D. Kant, G. Synnaeve, Y. Adi, and A. Defossez, “Simple and controllable music generation,” in Proc. NeurIPS, New Orleans, 2023.
+<a id="note1" href="#note1ref">[1]</a> I. Manco, B. Weck, S. Doh, M. Won, Y. Zhang, D. Bogdanov, Y. Wu, K. Chen, P. Tovstogan, E. Benetos, E. Quinton, G. Fazekas, and J. Nam, “The Song Describer dataset: A corpus of audio captions for music-and-language evaluation,” in Proc. NeurIPS, New Orleans, 2023.
 
-<a id="note2" href="#note2ref">[2]</a> I. Manco, B. Weck, S. Doh, M. Won, Y. Zhang, D. Bogdanov, Y. Wu, K. Chen, P. Tovstogan, E. Benetos, E. Quinton, G. Fazekas, and J. Nam, “The Song Describer dataset: A corpus of audio captions for music-and-language evaluation,” in Proc. NeurIPS, New Orleans, 2023.
+<a id="note2" href="#note2ref">[2]</a> J. Copet, F. Kreuk, I. Gat, T. Remez, D. Kant, G. Synnaeve, Y. Adi, and A. Defossez, “Simple and controllable music generation,” in Proc. NeurIPS, New Orleans, 2023.
