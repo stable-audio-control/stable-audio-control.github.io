@@ -8,8 +8,7 @@ Siyuan Hou<sup>1,2</sup>, Shansong Liu<sup>2</sup>, Ruibin Yuan<sup>3</sup>, Wei
 
 <p>
 Supporting webpage for ICASSP 2025.<br>
-<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2410.05151" type="button"><i
-                  class="bi bi-newspaper"></i> Paper</a>
+<a href="https://arxiv.org/abs/2410.05151">[Paper on ArXiv]</a> 
 <!-- Code is available <a href="https://github.com/NilsDem/control-transfer-diffusion/">here</a> -->
 </p>
 
