@@ -29,7 +29,7 @@ Experiments have been performed on text-to-music generation and music-style tran
 </p>
 
 
-# [Update: Music Editing]
+# [Update: Music Editing Examples]
 
 These examples are all from the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset)<a href="#note1" id="note1ref">[1]</a>. For our model, we use a text prompt and a music prompt as conditions for music editing. The text prompt is derived by randomly sampling from the original dataset and then rewriting it, while the music prompt is the top-4 constant-Q transform (CQT) representation extracted from the input audio. This enables the model to achieve music transformation in terms of style and instrumentation.
 
