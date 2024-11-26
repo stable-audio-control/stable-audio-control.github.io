@@ -37,15 +37,15 @@ Scroll to see all the results if necessary.
 
 <table class="table table-sm text-center" style="vertical-align: middle;">
   <colgroup>
-      <col style="width: 200px;">
       <col style="width: 300px;">
-      <col style="width: 200px;">
+      <col style="width: 400px;">
+      <col style="width: 300px;">
     </colgroup>
   <thead>
     <tr>
-      <th style="text-align:center"><span style="display: inline-block; width:200px">input audio</span> </th>
-      <th style="text-align:center;">Prompt</th>
-      <th style="text-align:center;">Ours</th>
+      <th style="text-align:center;"><span style="display: inline-block; width:300px">Input Audio</span></th>
+      <th style="text-align:center;"><span style="display: inline-block; width:400px">Prompt</span></th>
+      <th style="text-align:center"><span style="display: inline-block; width:300px">Generate Audio</span></th>
     </tr>
   </thead>
   <tbody>
