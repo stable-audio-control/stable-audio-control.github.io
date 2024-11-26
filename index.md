@@ -29,6 +29,57 @@ Experiments have been performed on text-to-music generation and music-style tran
 </p>
 
 
+# [Update: Music Editing]
+
+Examples in MIDI-to-audio generation on the [Slakh dataset](http://www.slakh.com/) . For each midi file, we present results in reconstruction (using the original audio associated with the midi file) and transfer to a different recording timbre. For the baseline SpecDiff (Multi-instrument music synthesis with spectrogram diffusion <a href="#note1" id="note1ref">
+[1]</a>), we swap the MIDI instrument program to the one of the target timbre sample. 
+
+Scroll to see all the results if necessary.
+
+<table class="table table-sm text-center" style="vertical-align: middle;">
+  <colgroup>
+      <col style="width: 200px;">
+      <col style="width: 300px;">
+      <col style="width: 200px;">
+    </colgroup>
+  <thead>
+    <tr>
+      <th style="text-align:center"><span style="display: inline-block; width:200px">input audio</span> </th>
+      <th style="text-align:center;">Prompt</th>
+      <th style="text-align:center;">Ours</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><audio src="audios/editing/input/49.wav" controls style="width: 200px"></audio></td>
+      <td>A heartfelt, warm acoustic guitar performance, evoking a sense of tenderness and deep emotion, with a melody that truly resonates and touches the heart.</td>
+      <td><audio src="audios/editing/ours/49-1-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>A vibrant MIDI electronic composition with a hopeful and optimistic vibe.</td>
+      <td><audio src="audios/editing/ours/49-3-4.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>This track composed of electronic instruments gives a sense of opening and clearness.</td>
+      <td><audio src="audios/editing/ours/49-4-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+    <tr>
+      <td rowspan="3"><audio src="audios/editing/input/322.wav" controls style="width: 200px"></audio></td>
+      <td>A heartfelt, warm acoustic guitar performance, evoking a sense of tenderness and deep emotion, with a melody that truly resonates and touches the heart.</td>
+      <td><audio src="audios/editing/ours/49-1-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>A vibrant MIDI electronic composition with a hopeful and optimistic vibe.</td>
+      <td><audio src="audios/editing/ours/49-3-4.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>This track composed of electronic instruments gives a sense of opening and clearness.</td>
+      <td><audio src="audios/editing/ours/49-4-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+  </tbody>
+</table> 
+
+
 ## Music Editing
 
 The examples of music editing task are all from the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset)<a href="#note1" id="note1ref">[1]</a>. For our model, we use a text prompt and a music prompt as the conditions for music editing. The text prompt comes from the dataset, while the music prompt is the top-4 constant-Q transform (CQT) representation extracted from the target audio. The table below shows the music prompt, displaying the top-4 CQT representation of the left channel from 0 to 6 seconds. For the baseline model [MusicGEN](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md)<a href="#note2" id="note2ref">[2]</a>, the same text prompt and Chroma-based melody representation are used as conditional inputs.
