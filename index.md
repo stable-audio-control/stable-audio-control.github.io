@@ -45,7 +45,7 @@ Scroll to see all the results if necessary.
   <thead>
     <tr>
       <th style="text-align:center;"><span style="display: inline-block; width:250px">Input Audio</span></th>
-      <th style="text-align:center;"><span style="display: inline-block; width:395px">Prompt</span></th>
+      <th style="text-align:center;"><span style="display: inline-block; width:395px">Text Prompt</span></th>
       <th style="text-align:center"><span style="display: inline-block; width:250px">Generate Audio</span></th>
     </tr>
   </thead>
