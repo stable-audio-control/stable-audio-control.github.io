@@ -43,9 +43,9 @@ Scroll to see all the results if necessary.
     </colgroup>
   <thead>
     <tr>
-      <th style="text-align:center;"><span style="display: inline-block; width:300px">Input Audio</span></th>
+      <th style="text-align:center;"><span style="display: inline-block; width:250px">Input Audio</span></th>
       <th style="text-align:center;"><span style="display: inline-block; width:400px">Prompt</span></th>
-      <th style="text-align:center"><span style="display: inline-block; width:300px">Generate Audio</span></th>
+      <th style="text-align:center"><span style="display: inline-block; width:250px">Generate Audio</span></th>
     </tr>
   </thead>
   <tbody>
