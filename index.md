@@ -31,20 +31,21 @@ Experiments have been performed on text-to-music generation and music-style tran
 
 # [Update: Music Editing Examples]
 
-These examples are all from the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset)<a href="#note1" id="note1ref">[1]</a>. For our model, we use a text prompt and a music prompt as conditions for music editing. The text prompt is derived by randomly sampling from the original dataset and then rewriting it, while the music prompt is the top-4 constant-Q transform (CQT) representation extracted from the input audio. This enables the model to achieve music transformation in terms of style and instrumentation. All audio samples are 47 seconds long, which is the maximum length supported by the model.
+These examples are all from the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset)<a href="#note1" id="note1ref">[1]</a>. For our model, we use a text prompt and a music prompt as conditions for music editing. The text prompt is derived by randomly sampling from the original dataset and further enriched and refined, 
+while the music prompt is the top-4 constant-Q transform (CQT) representation extracted from the input audio. This enables the model to achieve music transformation in terms of style and instrumentation. All audio samples are 47 seconds long, which is the maximum length supported by the model.
 
 Scroll to see all the results if necessary.
 
 <table class="table table-sm text-center" style="vertical-align: middle;">
   <colgroup>
       <col style="width: 300px;">
-      <col style="width: 400px;">
+      <col style="width: 395px;">
       <col style="width: 300px;">
     </colgroup>
   <thead>
     <tr>
       <th style="text-align:center;"><span style="display: inline-block; width:250px">Input Audio</span></th>
-      <th style="text-align:center;"><span style="display: inline-block; width:400px">Prompt</span></th>
+      <th style="text-align:center;"><span style="display: inline-block; width:395px">Prompt</span></th>
       <th style="text-align:center"><span style="display: inline-block; width:250px">Generate Audio</span></th>
     </tr>
   </thead>
