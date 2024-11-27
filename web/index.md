@@ -64,7 +64,7 @@ Scroll to see all the results if necessary.
       <td><audio src="../audios/editing/ours/49-4-0.wav" controls style="width: 200px"></audio></td>
     </tr>
     <tr>
-      <td rowspan="3"><../audio src="audios/editing/input/322.wav" controls style="width: 200px"></audio></td>
+      <td rowspan="3"><audio src="../audios/editing/input/322.wav" controls style="width: 200px"></audio></td>
       <td>This track composed of electronic instruments gives a sense of opening and clearness.</td>
       <td><audio src="../audios/editing/ours/322-1-0.wav" controls style="width: 200px"></audio></td>
     </tr>
