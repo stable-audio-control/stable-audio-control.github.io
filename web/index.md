@@ -29,6 +29,103 @@ Experiments have been performed on text-to-music generation and music-style tran
 </p>
 
 
+# [Update: Music Editing Examples]
+
+These examples are all from the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset)<a href="#note1" id="note1ref">[1]</a>. For our model, we use a text prompt and a music prompt as conditions for music editing. The text prompt is derived by randomly sampling from the original dataset and further enriched and refined, 
+while the music prompt is the top-4 constant-Q transform (CQT) representation extracted from the input audio. This enables the model to achieve music transformation in terms of style and instrumentation. All audio samples are 47 seconds long, which is the maximum length supported by the model.
+
+Scroll to see all the results if necessary.
+
+<table class="table table-sm text-center" style="vertical-align: middle;">
+  <colgroup>
+      <col style="width: 300px;">
+      <col style="width: 395px;">
+      <col style="width: 300px;">
+    </colgroup>
+  <thead>
+    <tr>
+      <th style="text-align:center;"><span style="display: inline-block; width:250px">Input Audio</span></th>
+      <th style="text-align:center;"><span style="display: inline-block; width:395px">Text Prompt</span></th>
+      <th style="text-align:center"><span style="display: inline-block; width:250px">Generate Audio</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><audio src="../audios/editing/input/49.wav" controls style="width: 200px"></audio></td>
+      <td>A heartfelt, warm acoustic guitar performance, evoking a sense of tenderness and deep emotion, with a melody that truly resonates and touches the heart.</td>
+      <td><audio src="../audios/editing/ours/49-1-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>A vibrant MIDI electronic composition with a hopeful and optimistic vibe.</td>
+      <td><audio src="../audios/editing/ours/49-3-4.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>This track composed of electronic instruments gives a sense of opening and clearness.</td>
+      <td><audio src="../audios/editing/ours/49-4-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+    <tr>
+      <td rowspan="3"><../audio src="audios/editing/input/322.wav" controls style="width: 200px"></audio></td>
+      <td>This track composed of electronic instruments gives a sense of opening and clearness.</td>
+      <td><audio src="../audios/editing/ours/322-1-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>Hopeful instrumental with guitar being the lead and tabla used for percussion in the middle giving a feeling of going somewhere with positive outlook</td>
+      <td><audio src="../audios/editing/ours/322_831.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>A string ensemble opens the track with legato, melancholic melodies. The violins and violas play beautifully, while the cellos and bass provide harmonic support for the moving passages. The overall feel is deeply melancholic, with an emotionally stirring performance that remains harmonious and a sense of clearness.</td>
+      <td><audio src="../audios/editing/ours/322-2-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><audio src="../audios/editing/input/610.wav" controls style="width: 200px"></audio></td>
+      <td>An exceptionally harmonious string performance with a lively tempo in the first half, transitioning to a gentle and beautiful melody in the second half. It creates a warm and comforting atmosphere, featuring cellos and bass providing a solid foundation, while violins and violas showcase the main theme, all without any noise, resulting in a cohesive and serene sound.</td>
+      <td><audio src="../audios/editing/ours/610-3-2.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>Pop solo piano instrumental song. Simple harmony and emotional theme. Makes you feel nostalgic and wanting a cup of warm tea sitting on the couch while holding the person you love.</td>
+      <td><audio src="../audios/editing/ours/610_361.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td rowspan="2"><audio src="../audios/editing/input/785.wav" controls style="width: 200px"></audio></td>
+      <td>A whimsical string arrangement with rich layers, featuring violins as the main melody, accompanied by violas and cellos. The light, playful melody blends harmoniously, creating a sense of clarity.</td>
+      <td><audio src="../audios/editing/ours/785-1-1.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>An instrumental piece primarily featuring acoustic guitar, with a lively and nimble feel. The melody is bright, delivering an overall sense of joy.</td>
+      <td><audio src="../audios/editing/ours/785-3-3.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td rowspan="2"><audio src="../audios/editing/input/933.wav" controls style="width: 200px"></audio></td>
+      <td>A joyful saxophone performance that is smooth and cohesive, accompanied by cello. The first half features a relaxed tempo, while the second half picks up with an upbeat rhythm, creating a lively and energetic atmosphere. The overall sound is harmonious and clear, evoking feelings of happiness and vitality.</td>
+      <td><audio src="../audios/editing/ours/933-1-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>A cheerful piano performance with a smooth and flowing rhythm, evoking feelings of joy and vitality.</td>
+      <td><audio src="../audios/editing/ours/933-2-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td rowspan="2"><audio src="../audios/editing/input/1069.wav" controls style="width: 200px"></audio></td>
+      <td>An instrumental piece primarily featuring piano, with a lively rhythm and cheerful melodies that evoke a sense of joyful childhood playfulness. The melodies are clear and bright.</td>
+      <td><audio src="../audios/editing/ours/1069-2-0.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td>fast and fun beat-based indie pop to set a protagonist-gets-good-at-x movie montage to.</td>
+      <td><audio src="../audios/editing/ours/1069_712.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td><audio src="../audios/editing/input/57.wav" controls style="width: 200px"></audio></td>
+      <td>A lively 70s style British pop song featuring drums, electric guitars, and synth violin. The instruments blend harmoniously, creating a dynamic, clean sound without any noise or clutter.</td>
+      <td><audio src="../audios/editing/ours/57-2-3.wav" controls style="width: 200px"></audio></td>
+    </tr>
+      <tr>
+      <td><audio src="../audios/editing/input/703.wav" controls style="width: 200px"></audio></td>
+      <td>A soothing acoustic guitar song that evokes nostalgia, featuring intricate fingerpicking. The melody is both sacred and mysterious, with a rich texture.</td>
+      <td><audio src="../audios/editing/ours/703-1-1.wav" controls style="width: 200px"></audio></td>
+    </tr>
+  </tbody>
+</table> 
+
+
 ## Music Editing
 
 The examples of music editing task are all from the [Song Describer dataset](https://github.com/mulab-mir/song-describer-dataset)<a href="#note1" id="note1ref">[1]</a>. For our model, we use a text prompt and a music prompt as the conditions for music editing. The text prompt comes from the dataset, while the music prompt is the top-4 constant-Q transform (CQT) representation extracted from the target audio. The table below shows the music prompt, displaying the top-4 CQT representation of the left channel from 0 to 6 seconds. For the baseline model [MusicGEN](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md)<a href="#note2" id="note2ref">[2]</a>, the same text prompt and Chroma-based melody representation are used as conditional inputs.
